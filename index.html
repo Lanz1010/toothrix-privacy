@@ -1,1081 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Toothrix Privacy Policy</title>
-
-    <meta
-        name="description"
-        content="Toothrix Privacy Policy - Learn how Toothrix handles personal, patient, medical, dental, appointment, and billing information."
-    >
-
-    <style>
-        :root {
-            --primary: #1976d2;
-            --primary-dark: #125ca5;
-            --primary-light: #eaf4ff;
-            --text: #263238;
-            --muted: #607d8b;
-            --background: #f4f7fb;
-            --card: #ffffff;
-            --border: #e2e8f0;
-            --shadow: 0 8px 30px rgba(15, 23, 42, 0.07);
-            --radius: 16px;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 30px;
-        }
-
-        body {
-            margin: 0;
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                Roboto,
-                Helvetica,
-                Arial,
-                sans-serif;
-
-            color: var(--text);
-            background: var(--background);
-            line-height: 1.75;
-        }
-
-        /* =========================
-           HEADER
-        ========================== */
-
-        .hero {
-            background:
-                linear-gradient(
-                    135deg,
-                    #1976d2 0%,
-                    #1565c0 55%,
-                    #0d47a1 100%
-                );
-
-            color: white;
-            padding: 64px 20px 70px;
-            text-align: center;
-        }
-
-        .brand {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 64px;
-            height: 64px;
-            margin-bottom: 18px;
-
-            background: rgba(255, 255, 255, 0.16);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            border-radius: 18px;
-
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-
-        .hero h1 {
-            margin: 0;
-            font-size: clamp(32px, 5vw, 48px);
-            line-height: 1.15;
-            letter-spacing: -1px;
-        }
-
-        .hero p {
-            margin: 14px 0 0;
-            font-size: clamp(16px, 2vw, 19px);
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        /* =========================
-           PAGE LAYOUT
-        ========================== */
-
-        .page {
-            width: min(1180px, calc(100% - 32px));
-            margin: -35px auto 60px;
-
-            display: grid;
-            grid-template-columns: 260px minmax(0, 1fr);
-            gap: 28px;
-
-            align-items: start;
-        }
-
-        /* =========================
-           TABLE OF CONTENTS
-        ========================== */
-
-        .toc {
-            position: sticky;
-            top: 20px;
-
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-
-            padding: 22px;
-
-            box-shadow: var(--shadow);
-        }
-
-        .toc-title {
-            margin: 0 0 14px;
-
-            font-size: 14px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-
-            color: var(--primary);
-        }
-
-        .toc a {
-            display: block;
-
-            padding: 7px 10px;
-            margin: 2px 0;
-
-            border-radius: 8px;
-
-            color: #455a64;
-            text-decoration: none;
-            font-size: 14px;
-
-            transition:
-                background 0.2s ease,
-                color 0.2s ease;
-        }
-
-        .toc a:hover {
-            background: var(--primary-light);
-            color: var(--primary);
-        }
-
-        /* =========================
-           POLICY CARD
-        ========================== */
-
-        .policy {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-
-            padding: clamp(25px, 5vw, 55px);
-
-            box-shadow: var(--shadow);
-        }
-
-        .updated {
-            display: inline-block;
-
-            margin: 0 0 35px;
-            padding: 8px 14px;
-
-            background: #f1f5f9;
-            border-radius: 8px;
-
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        /* =========================
-           HEADINGS
-        ========================== */
-
-        h2 {
-            margin-top: 48px;
-            margin-bottom: 18px;
-
-            color: var(--primary);
-
-            font-size: clamp(23px, 3vw, 30px);
-            line-height: 1.3;
-
-            letter-spacing: -0.3px;
-        }
-
-        h2:first-of-type {
-            margin-top: 0;
-        }
-
-        h3 {
-            margin-top: 30px;
-            margin-bottom: 12px;
-
-            color: #37474f;
-
-            font-size: 18px;
-            line-height: 1.4;
-        }
-
-        p {
-            margin: 0 0 18px;
-        }
-
-        ul {
-            margin: 10px 0 24px;
-            padding-left: 25px;
-        }
-
-        li {
-            margin-bottom: 7px;
-            padding-left: 3px;
-        }
-
-        strong {
-            color: #263238;
-        }
-
-        /* =========================
-           CONTACT BOX
-        ========================== */
-
-        .contact {
-            margin-top: 24px;
-            padding: 24px;
-
-            background: var(--primary-light);
-
-            border: 1px solid #cfe5ff;
-            border-left: 5px solid var(--primary);
-
-            border-radius: 12px;
-        }
-
-        .contact p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* =========================
-           INFO BOX
-        ========================== */
-
-        .notice {
-            margin: 25px 0;
-            padding: 20px;
-
-            background: #f8fafc;
-            border: 1px solid var(--border);
-
-            border-radius: 12px;
-        }
-
-        /* =========================
-           FOOTER
-        ========================== */
-
-        footer {
-            padding: 35px 20px 45px;
-
-            text-align: center;
-
-            color: #78909c;
-            font-size: 14px;
-        }
-
-        footer strong {
-            color: #546e7a;
-        }
-
-        /* =========================
-           BACK TO TOP
-        ========================== */
-
-        .back-top {
-            display: inline-block;
-
-            margin-top: 20px;
-
-            color: var(--primary);
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .back-top:hover {
-            text-decoration: underline;
-        }
-
-        /* =========================
-           TABLET
-        ========================== */
-
-        @media (max-width: 900px) {
-
-            .page {
-                grid-template-columns: 1fr;
-                margin-top: -25px;
-            }
-
-            .toc {
-                position: static;
-            }
-
-            .toc-links {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 2px 10px;
-            }
-        }
-
-        /* =========================
-           MOBILE
-        ========================== */
-
-        @media (max-width: 600px) {
-
-            .hero {
-                padding: 45px 18px 55px;
-            }
-
-            .brand {
-                width: 55px;
-                height: 55px;
-                border-radius: 15px;
-                font-size: 24px;
-            }
-
-            .page {
-                width: min(100% - 20px, 700px);
-                margin: -20px auto 35px;
-                gap: 15px;
-            }
-
-            .toc {
-                padding: 18px;
-                border-radius: 13px;
-            }
-
-            .toc-links {
-                display: block;
-            }
-
-            .toc a {
-                padding: 8px 10px;
-            }
-
-            .policy {
-                padding: 25px 20px;
-                border-radius: 13px;
-            }
-
-            .updated {
-                margin-bottom: 25px;
-                font-size: 13px;
-            }
-
-            h2 {
-                margin-top: 38px;
-            }
-
-            h3 {
-                font-size: 17px;
-            }
-
-            p,
-            li {
-                font-size: 15px;
-            }
-
-            .contact {
-                padding: 18px;
-            }
-        }
-
-        /* =========================
-           VERY SMALL PHONES
-        ========================== */
-
-        @media (max-width: 380px) {
-
-            .page {
-                width: calc(100% - 14px);
-            }
-
-            .policy {
-                padding: 22px 16px;
-            }
-
-            .hero {
-                padding-left: 14px;
-                padding-right: 14px;
-            }
-
-            .toc {
-                padding: 15px;
-            }
-
-            p,
-            li {
-                font-size: 14px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Toothrix Privacy Policy - Learn how Toothrix handles account, patient, medical, dental, appointment, treatment, and billing information.">
+<title>Toothrix Privacy Policy</title>
+<style>
+:root{--primary:#1976d2;--primary-dark:#0d47a1;--primary-light:#eaf4ff;--text:#263238;--muted:#607d8b;--background:#f4f7fb;--card:#fff;--border:#e2e8f0;--shadow:0 8px 30px rgba(15,23,42,.07);--radius:16px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:25px}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.75;color:var(--text);background:var(--background)}
+.hero{color:#fff;text-align:center;padding:64px 20px 70px;background:linear-gradient(135deg,#1976d2 0%,#1565c0 55%,#0d47a1 100%)}
+.brand{width:64px;height:64px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;border-radius:18px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);font-size:28px;font-weight:800}
+.hero h1{margin:0;font-size:clamp(32px,5vw,48px);line-height:1.15}
+.hero p{margin:14px 0 0;font-size:clamp(16px,2vw,19px);color:rgba(255,255,255,.9)}
+.page{width:min(1180px,calc(100% - 32px));margin:-35px auto 60px;display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;align-items:start}
+.toc{position:sticky;top:20px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.toc-title{margin:0 0 14px;font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--primary)}
+.toc a{display:block;padding:7px 10px;margin:2px 0;border-radius:8px;color:#455a64;text-decoration:none;font-size:14px;transition:.2s}
+.toc a:hover{background:var(--primary-light);color:var(--primary)}
+.policy{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:clamp(25px,5vw,55px);box-shadow:var(--shadow)}
+.updated{display:inline-block;margin:0 0 30px;padding:8px 14px;background:#f1f5f9;border-radius:8px;color:var(--muted);font-size:14px}
+h2{margin-top:48px;margin-bottom:18px;color:var(--primary);font-size:clamp(23px,3vw,30px);line-height:1.3}
+h2:first-of-type{margin-top:0}
+h3{margin-top:30px;margin-bottom:12px;color:#37474f;font-size:18px}
+p{margin:0 0 18px}
+ul{margin:10px 0 24px;padding-left:25px}
+li{margin-bottom:7px;padding-left:3px}
+strong{color:#263238}
+.contact,.deletion-box{margin-top:24px;padding:24px;background:var(--primary-light);border:1px solid #cfe5ff;border-left:5px solid var(--primary);border-radius:12px}
+.deletion-box{background:#f8fafc}
+footer{padding:35px 20px 45px;text-align:center;color:#78909c;font-size:14px}
+.back-top{display:inline-block;margin-top:20px;color:var(--primary);font-weight:600;text-decoration:none}
+.back-top:hover{text-decoration:underline}
+a{color:var(--primary)}
+@media(max-width:900px){.page{grid-template-columns:1fr;margin-top:-25px}.toc{position:static}.toc-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 10px}}
+@media(max-width:600px){.hero{padding:45px 18px 55px}.brand{width:55px;height:55px;border-radius:15px;font-size:24px}.page{width:calc(100% - 20px);margin:-20px auto 35px;gap:15px}.toc{padding:18px;border-radius:13px}.toc-links{display:block}.toc a{padding:8px 10px}.policy{padding:25px 20px;border-radius:13px}.updated{margin-bottom:25px;font-size:13px}h2{margin-top:38px}h3{font-size:17px}p,li{font-size:15px}.contact,.deletion-box{padding:18px}}
+@media(max-width:380px){.page{width:calc(100% - 14px)}.policy{padding:22px 16px}.hero{padding-left:14px;padding-right:14px}.toc{padding:15px}p,li{font-size:14px}}
+</style>
 </head>
-
-<body>
-
-<!-- =========================
-     HEADER
-========================== -->
+<body id="top">
 
 <header class="hero">
-
-    <div class="brand">
-        T
-    </div>
-
-    <h1>Toothrix</h1>
-
-    <p>Privacy Policy</p>
-
+<div class="brand">T</div>
+<h1>Toothrix</h1>
+<p>Privacy Policy</p>
 </header>
 
-
-<!-- =========================
-     MAIN PAGE
-========================== -->
-
 <main class="page">
-
-    <!-- TABLE OF CONTENTS -->
-
-    <aside class="toc">
-
-        <div class="toc-title">
-            Contents
-        </div>
-
-        <nav class="toc-links">
-
-            <a href="#introduction">
-                1. Introduction
-            </a>
-
-            <a href="#information">
-                2. Information We Collect
-            </a>
-
-            <a href="#use">
-                3. How We Use Information
-            </a>
-
-            <a href="#authentication">
-                4. Authentication Services
-            </a>
-
-            <a href="#storage">
-                5. Data Storage
-            </a>
-
-            <a href="#sharing">
-                6. Data Sharing
-            </a>
-
-            <a href="#protection">
-                7. Protection of Information
-            </a>
-
-            <a href="#patient-data">
-                8. Patient Data and Authorized Access
-            </a>
-
-            <a href="#retention">
-                9. Data Retention
-            </a>
-
-            <a href="#deletion">
-                10. Account and Data Deletion
-            </a>
-
-            <a href="#children">
-                11. Children's Privacy
-            </a>
-
-            <a href="#third-party">
-                12. Third-Party Services
-            </a>
-
-            <a href="#offline">
-                13. Offline Functionality
-            </a>
-
-            <a href="#changes">
-                14. Changes to This Privacy Policy
-            </a>
-
-            <a href="#contact">
-                15. Privacy Questions and Contact
-            </a>
-
-            <a href="#consent">
-                16. Consent
-            </a>
-
-        </nav>
-
-    </aside>
-
-
-    <!-- PRIVACY POLICY -->
-
-    <article class="policy">
-
-        <p class="updated">
-            <strong>Last Updated:</strong>
-            September 13, 2026
-        </p>
-
-
-        <section id="introduction">
-
-            <h2>1. Introduction</h2>
-
-            <p>
-                Toothrix ("we," "our," or "the App") is a dental practice
-                management system designed to help dental clinics manage
-                patient information, appointments, dental records, medical
-                histories, treatment information, billing records, and other
-                clinic-related activities.
-            </p>
-
-            <p>
-                We respect the privacy of our users and are committed to
-                protecting personal and sensitive information handled through
-                Toothrix.
-            </p>
-
-            <p>
-                This Privacy Policy explains what information Toothrix may
-                collect, how that information is used, how it is stored and
-                protected, when it may be shared, and the choices available
-                to users.
-            </p>
-
-            <p>
-                By using Toothrix, you acknowledge the practices described in
-                this Privacy Policy.
-            </p>
-
-        </section>
-
-
-        <section id="information">
-
-            <h2>2. Information We Collect</h2>
-
-            <p>
-                Depending on how the App is used, Toothrix may process the
-                following categories of information.
-            </p>
-
-            <h3>A. Dentist and Clinic Account Information</h3>
-
-            <p>
-                When a dentist or authorized clinic user creates or uses an
-                account, Toothrix may process:
-            </p>
-
-            <ul>
-                <li>Email address</li>
-                <li>Account identification information</li>
-                <li>Name</li>
-                <li>Nickname</li>
-                <li>Professional role or profession</li>
-                <li>Clinic name</li>
-                <li>Clinic address</li>
-                <li>Contact number</li>
-                <li>Professional biography or profile information</li>
-                <li>Authentication information</li>
-            </ul>
-
-            <p>
-                Toothrix may use email-based authentication and Google
-                Sign-In for account authentication.
-            </p>
-
-
-            <h3>B. Patient Information</h3>
-
-            <p>
-                Authorized dental professionals and clinic personnel may
-                enter patient information into Toothrix, including:
-            </p>
-
-            <ul>
-                <li>Patient name</li>
-                <li>Nickname</li>
-                <li>Date of birth</li>
-                <li>Sex</li>
-                <li>Nationality</li>
-                <li>Religion</li>
-                <li>Occupation</li>
-                <li>Mobile number</li>
-                <li>Email address</li>
-                <li>Home or mailing address</li>
-                <li>Emergency contact information</li>
-                <li>Patient identification number</li>
-            </ul>
-
-
-            <h3>C. Medical and Dental Information</h3>
-
-            <p>
-                Because Toothrix is designed for dental practice management,
-                authorized users may enter health-related information,
-                including:
-            </p>
-
-            <ul>
-                <li>Medical history</li>
-                <li>Existing medical conditions</li>
-                <li>Medication information</li>
-                <li>Allergy information</li>
-                <li>Blood type</li>
-                <li>Blood pressure</li>
-                <li>Pregnancy-related information where applicable</li>
-                <li>Tobacco and alcohol use information</li>
-                <li>Previous dental treatment</li>
-                <li>Previous dentist information</li>
-                <li>Dental visit history</li>
-                <li>Dental complaints</li>
-                <li>Dental findings</li>
-                <li>Dental chart information</li>
-                <li>Treatment plans</li>
-                <li>Treatment records</li>
-                <li>Consent-related information</li>
-            </ul>
-
-
-            <h3>D. Appointment and Clinic Information</h3>
-
-            <p>
-                Toothrix may process information related to clinic
-                operations, including:
-            </p>
-
-            <ul>
-                <li>Appointment information</li>
-                <li>Appointment dates and times</li>
-                <li>Patient and dentist associations</li>
-                <li>Treatment-related information</li>
-                <li>Clinic scheduling information</li>
-            </ul>
-
-
-            <h3>E. Billing and Payment Records</h3>
-
-            <p>
-                Toothrix may process information related to clinic billing
-                and payment records, such as:
-            </p>
-
-            <ul>
-                <li>Treatment charges</li>
-                <li>Bills</li>
-                <li>Payment records</li>
-                <li>Outstanding balances</li>
-                <li>Payment status</li>
-            </ul>
-
-            <p>
-                Toothrix is a dental practice management system and does not
-                function as a bank, electronic wallet, investment platform,
-                lending service, or financial institution.
-            </p>
-
-        </section>
-
-
-        <section id="use">
-
-            <h2>3. How We Use Information</h2>
-
-            <p>
-                Information processed through Toothrix may be used to:
-            </p>
-
-            <ul>
-                <li>Create and manage dentist accounts</li>
-                <li>Authenticate users</li>
-                <li>Manage patient records</li>
-                <li>Maintain medical and dental histories</li>
-                <li>Manage appointments</li>
-                <li>Maintain dental charts</li>
-                <li>Manage treatment plans and treatment records</li>
-                <li>Manage clinic billing and payment records</li>
-                <li>Support offline functionality</li>
-                <li>Synchronize information when connectivity is available</li>
-                <li>Maintain and improve the functionality and reliability of the App</li>
-                <li>Respond to support requests</li>
-                <li>Prevent unauthorized access and misuse</li>
-                <li>Comply with applicable legal requirements</li>
-            </ul>
-
-            <p>
-                We do not use patient information for advertising purposes.
-            </p>
-
-        </section>
-
-
-        <section id="authentication">
-
-            <h2>4. Authentication Services</h2>
-
-            <p>
-                Toothrix may use authentication services to allow authorized
-                users to securely access their accounts.
-            </p>
-
-            <p>
-                These services may include:
-            </p>
-
-            <ul>
-                <li>Email-based authentication and verification</li>
-                <li>Google Sign-In</li>
-            </ul>
-
-            <p>
-                Authentication information is used to verify authorized
-                users and provide access to their Toothrix account.
-            </p>
-
-        </section>
-
-
-        <section id="storage">
-
-            <h2>5. Data Storage</h2>
-
-            <p>
-                Toothrix uses a combination of online and local storage
-                technologies to support its functionality.
-            </p>
-
-            <p>
-                Online data may be stored using Supabase, which provides
-                database, authentication, and backend infrastructure
-                services.
-            </p>
-
-            <p>
-                Some information may also be stored locally on the user's
-                device to support offline functionality.
-            </p>
-
-        </section>
-
-
-        <section id="sharing">
-
-            <h2>6. Data Sharing</h2>
-
-            <p>
-                Toothrix does not sell personal information or patient
-                information.
-            </p>
-
-            <p>
-                Information may be processed by service providers necessary
-                to operate the App, such as authentication, database,
-                hosting, and infrastructure providers.
-            </p>
-
-            <p>
-                Toothrix may use Supabase to provide backend database and
-                authentication services.
-            </p>
-
-            <p>
-                Information may also be disclosed when required by applicable
-                law, legal process, or a valid governmental or regulatory
-                request.
-            </p>
-
-            <p>
-                Authorized dental professionals and clinic personnel may
-                access patient information only as permitted by their
-                clinic's use of the App and applicable access controls.
-            </p>
-
-        </section>
-
-
-        <section id="protection">
-
-            <h2>7. Protection of Information</h2>
-
-            <p>
-                We take reasonable measures to protect information handled
-                through Toothrix against unauthorized access, alteration,
-                disclosure, or destruction.
-            </p>
-
-            <p>
-                Security measures may include:
-            </p>
-
-            <ul>
-                <li>Authenticated account access</li>
-                <li>Access controls</li>
-                <li>Database security policies</li>
-                <li>Secure communication with online services</li>
-                <li>Authentication controls</li>
-                <li>Local device security mechanisms</li>
-            </ul>
-
-            <p>
-                However, no electronic storage or transmission system can be
-                guaranteed to be completely secure.
-            </p>
-
-            <p>
-                Users are responsible for protecting their account credentials
-                and their device from unauthorized access.
-            </p>
-
-        </section>
-
-
-        <section id="patient-data">
-
-            <h2>8. Patient Data and Authorized Access</h2>
-
-            <p>
-                Toothrix is intended for use by authorized dental
-                professionals and clinic personnel.
-            </p>
-
-            <p>
-                Patient information should only be entered and accessed by
-                individuals who have appropriate authorization to handle the
-                information.
-            </p>
-
-            <p>
-                Clinic administrators and dental professionals are
-                responsible for ensuring that their use of Toothrix complies
-                with applicable privacy, healthcare, and data-protection
-                requirements.
-            </p>
-
-        </section>
-
-
-        <section id="retention">
-
-            <h2>9. Data Retention</h2>
-
-            <p>
-                Personal and patient information may be retained for as long
-                as necessary to provide the App's functionality, maintain
-                clinic records, satisfy legitimate operational requirements,
-                or comply with applicable legal or regulatory requirements.
-            </p>
-
-            <p>
-                When information is no longer required, it should be deleted
-                or securely disposed of in accordance with applicable
-                requirements and the clinic's data-retention practices.
-            </p>
-
-        </section>
-
-
-        <section id="deletion">
-
-            <h2>10. Account and Data Deletion</h2>
-
-            <p>
-                Users may request deletion of their Toothrix account and
-                associated personal information through the account deletion
-                process provided by the App or by contacting us using the
-                privacy contact information below.
-            </p>
-
-            <p>
-                Upon receiving a valid deletion request, we will process the
-                request in accordance with applicable requirements.
-            </p>
-
-            <p>
-                Some information may need to be retained when required by law,
-                regulatory obligations, legitimate security requirements, or
-                applicable record-retention obligations.
-            </p>
-
-        </section>
-
-
-        <section id="children">
-
-            <h2>11. Children's Privacy</h2>
-
-            <p>
-                Toothrix is designed primarily for use by dental professionals
-                and authorized clinic personnel, rather than for direct use
-                by children.
-            </p>
-
-            <p>
-                Patient information relating to minors may nevertheless be
-                entered into Toothrix by authorized dental professionals when
-                necessary for dental care and clinic recordkeeping.
-            </p>
-
-            <p>
-                Toothrix does not knowingly use children's information for
-                advertising or targeted advertising.
-            </p>
-
-        </section>
-
-
-        <section id="third-party">
-
-            <h2>12. Third-Party Services</h2>
-
-            <p>
-                Toothrix may use third-party services necessary for
-                authentication, database storage, hosting, application
-                functionality, or other technical services.
-            </p>
-
-            <p>
-                These services may include:
-            </p>
-
-            <ul>
-                <li>Supabase</li>
-                <li>Google Sign-In</li>
-            </ul>
-
-        </section>
-
-
-        <section id="offline">
-
-            <h2>13. Offline Functionality</h2>
-
-            <p>
-                Toothrix supports certain functionality when an internet
-                connection is unavailable.
-            </p>
-
-            <p>
-                Information required for offline functionality may be
-                temporarily or persistently stored on the device.
-            </p>
-
-            <p>
-                When connectivity becomes available, the application may
-                synchronize applicable information with the online backend.
-            </p>
-
-            <p>
-                Users should protect the device on which Toothrix is installed
-                because locally stored information may be accessible to
-                someone who gains unauthorized access to the device.
-            </p>
-
-        </section>
-
-
-        <section id="changes">
-
-            <h2>14. Changes to This Privacy Policy</h2>
-
-            <p>
-                We may update this Privacy Policy from time to time to
-                reflect changes to Toothrix, applicable laws, or our data
-                practices.
-            </p>
-
-            <p>
-                When changes are made, the updated version will be published
-                through this Privacy Policy webpage and the "Last Updated"
-                date will be revised.
-            </p>
-
-        </section>
-
-
-        <section id="contact">
-
-            <h2>15. Privacy Questions and Contact</h2>
-
-            <div class="contact">
-
-                <p>
-                    <strong>App:</strong>
-                    Toothrix
-                </p>
-
-                <p>
-                    <strong>Developer/Organization:</strong>
-                    Toothrix
-                </p>
-
-                <p>
-                    <strong>Privacy Contact Email:</strong>
-                    toothrix@gmail.com
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <section id="consent">
-
-            <h2>16. Consent</h2>
-
-            <p>
-                By using Toothrix, users acknowledge that their information
-                may be processed as described in this Privacy Policy.
-            </p>
-
-            <p>
-                Where required by applicable law, appropriate consent and
-                authorization will be obtained before collecting or processing
-                personal or sensitive information.
-            </p>
-
-        </section>
-
-
-        <a class="back-top" href="#">
-            ↑ Back to top
-        </a>
-
-    </article>
-
+<aside class="toc">
+<div class="toc-title">Contents</div>
+<nav class="toc-links">
+<a href="#introduction">1. Introduction</a>
+<a href="#information">2. Information We Collect</a>
+<a href="#use">3. How We Use Information</a>
+<a href="#authentication">4. Authentication Services</a>
+<a href="#storage">5. Data Storage</a>
+<a href="#sharing">6. Data Sharing</a>
+<a href="#protection">7. Protection of Information</a>
+<a href="#patient-data">8. Patient Data and Authorized Access</a>
+<a href="#retention">9. Data Retention</a>
+<a href="#deletion">10. Account and Data Deletion</a>
+<a href="#children">11. Children's Privacy</a>
+<a href="#third-party">12. Third-Party Services</a>
+<a href="#offline">13. Offline Functionality</a>
+<a href="#changes">14. Changes to This Privacy Policy</a>
+<a href="#contact">15. Privacy Questions and Contact</a>
+<a href="#consent">16. Consent</a>
+</nav>
+</aside>
+
+<article class="policy">
+<p class="updated"><strong>Last Updated:</strong> September 15, 2026</p>
+
+<section id="introduction">
+<h2>1. Introduction</h2>
+<p>Toothrix ("we," "our," or "the App") is a dental practice management system designed to help dental clinics manage patient information, appointments, dental records, medical histories, treatment information, billing records, and other clinic-related activities.</p>
+<p>We respect the privacy of our users and are committed to protecting personal and sensitive information handled through Toothrix.</p>
+<p>This Privacy Policy explains what information Toothrix may collect, how that information is used, how it is stored and protected, when it may be shared, how long it may be retained, and the choices available to users.</p>
+<p>By using Toothrix, users acknowledge the practices described in this Privacy Policy.</p>
+</section>
+
+<section id="information">
+<h2>2. Information We Collect</h2>
+<p>Depending on how the App is used, Toothrix may process the following categories of information.</p>
+
+<h3>A. Dentist and Clinic Account Information</h3>
+<p>When a dentist or authorized clinic user creates or uses an account, Toothrix may process:</p>
+<ul><li>Email address</li><li>Account identification information</li><li>Name</li><li>Nickname</li><li>Professional role or profession</li><li>Clinic name</li><li>Clinic address</li><li>Contact number</li><li>Professional biography or profile information</li><li>Authentication information</li></ul>
+
+<h3>B. Patient Information</h3>
+<p>Authorized dental professionals and clinic personnel may enter patient information into Toothrix, including:</p>
+<ul><li>Patient name</li><li>Nickname</li><li>Date of birth</li><li>Sex</li><li>Nationality</li><li>Religion</li><li>Occupation</li><li>Mobile number</li><li>Email address</li><li>Home or mailing address</li><li>Emergency contact information</li><li>Patient identification number</li></ul>
+
+<h3>C. Medical and Dental Information</h3>
+<p>Because Toothrix is designed for dental practice management, authorized users may enter health-related information, including:</p>
+<ul><li>Medical history</li><li>Existing medical conditions</li><li>Medication information</li><li>Allergy information</li><li>Blood type</li><li>Blood pressure</li><li>Pregnancy-related information where applicable</li><li>Tobacco and alcohol use information</li><li>Previous dental treatment</li><li>Previous dentist information</li><li>Dental visit history</li><li>Dental complaints</li><li>Dental findings</li><li>Dental chart information</li><li>Treatment plans</li><li>Treatment records</li><li>Consent-related information</li></ul>
+<p>This information is intended to support authorized dental professionals in managing patient records and providing dental services.</p>
+
+<h3>D. Appointment and Clinic Information</h3>
+<p>Toothrix may process information related to clinic operations, including:</p>
+<ul><li>Appointment information</li><li>Appointment dates and times</li><li>Patient and dentist associations</li><li>Treatment-related information</li><li>Clinic scheduling information</li></ul>
+
+<h3>E. Billing and Payment Records</h3>
+<p>Toothrix may process information related to clinic billing and payment records, such as:</p>
+<ul><li>Treatment charges</li><li>Bills</li><li>Payment records</li><li>Outstanding balances</li><li>Payment status</li></ul>
+<p>Toothrix is a dental practice management system and does not function as a bank, electronic wallet, investment platform, lending service, or financial institution.</p>
+
+<h3>F. Locally Stored Data</h3>
+<p>To support offline functionality, certain application data may be stored locally on the user's device. Local storage may include information necessary for the App to continue providing its features when an internet connection is temporarily unavailable.</p>
+</section>
+
+<section id="use">
+<h2>3. How We Use Information</h2>
+<p>Information processed through Toothrix may be used to:</p>
+<ul><li>Create and manage dentist accounts</li><li>Authenticate users</li><li>Manage patient records</li><li>Maintain medical and dental histories</li><li>Manage appointments</li><li>Maintain dental charts</li><li>Manage treatment plans and treatment records</li><li>Manage clinic billing and payment records</li><li>Support offline functionality</li><li>Synchronize information when connectivity is available</li><li>Maintain and improve the functionality and reliability of the App</li><li>Respond to support requests</li><li>Prevent unauthorized access and misuse</li><li>Comply with applicable legal requirements</li></ul>
+<p>We do not use patient information for advertising or targeted advertising purposes.</p>
+</section>
+
+<section id="authentication">
+<h2>4. Authentication Services</h2>
+<p>Toothrix uses authentication services to allow authorized users to securely access their accounts.</p>
+<p>These services may include:</p>
+<ul><li>Email-based authentication and verification</li><li>Password-based authentication</li><li>Google Sign-In</li></ul>
+<p>Authentication information is used to verify authorized users and provide access to their Toothrix accounts.</p>
+</section>
+
+<section id="storage">
+<h2>5. Data Storage</h2>
+<p>Toothrix uses a combination of online and local storage technologies to support its functionality.</p>
+<p>Online data may be stored using Supabase, which provides database, authentication, and backend infrastructure services.</p>
+<p>Some information may also be stored locally on the user's device to support offline functionality.</p>
+</section>
+
+<section id="sharing">
+<h2>6. Data Sharing</h2>
+<p>Toothrix does not sell personal information or patient information.</p>
+<p>Information may be processed by service providers necessary to operate the App, such as authentication, database, hosting, and infrastructure providers.</p>
+<p>Toothrix may use Supabase to provide backend database and authentication services.</p>
+<p>Toothrix may also use Google services for authentication when a user chooses Google Sign-In.</p>
+<p>Information may also be disclosed when required by applicable law, legal process, or a valid governmental or regulatory request.</p>
+</section>
+
+<section id="protection">
+<h2>7. Protection of Information</h2>
+<p>We take reasonable measures to protect information handled through Toothrix against unauthorized access, alteration, disclosure, or destruction.</p>
+<p>Security measures may include:</p>
+<ul><li>Authenticated account access</li><li>Access controls</li><li>Database security policies</li><li>Secure communication with online services</li><li>Authentication controls</li><li>Local device security mechanisms</li></ul>
+<p>Online information transmitted between the App and its backend services is protected using secure communication protocols.</p>
+<p>However, no electronic storage or transmission system can be guaranteed to be completely secure.</p>
+<p>Users are responsible for protecting their account credentials and the device on which Toothrix is installed from unauthorized access.</p>
+</section>
+
+<section id="patient-data">
+<h2>8. Patient Data and Authorized Access</h2>
+<p>Toothrix is intended for use by authorized dental professionals and clinic personnel.</p>
+<p>Patient information should only be entered and accessed by individuals who have appropriate authorization to handle the information.</p>
+<p>Clinic administrators and dental professionals are responsible for ensuring that their use of Toothrix complies with applicable privacy, healthcare, and data-protection requirements.</p>
+<p>Toothrix is not intended for children to create or manage their own accounts. Patient information relating to minors may nevertheless be entered into Toothrix by authorized dental professionals when necessary for dental care and clinic recordkeeping.</p>
+</section>
+
+<section id="retention">
+<h2>9. Data Retention</h2>
+<p>Personal and patient information may be retained for as long as necessary to provide the App's functionality, maintain clinic records, satisfy legitimate operational requirements, or comply with applicable legal or regulatory requirements.</p>
+<p>When information is no longer required, it should be deleted or securely disposed of in accordance with applicable requirements and the clinic's data-retention practices.</p>
+</section>
+
+<section id="deletion">
+<h2>10. Account and Data Deletion</h2>
+<div class="deletion-box">
+<p><strong>Delete your Toothrix account</strong></p>
+<p>Toothrix provides an account deletion feature within the application. Users can access the <strong>Delete Account</strong> option in Toothrix to request deletion of their account and associated personal information.</p>
+<p>If a user can no longer access the Toothrix application, they may request account deletion by contacting <strong><a href="mailto:toothrix@gmail.com">toothrix@gmail.com</a></strong>. The request should include the email address associated with the Toothrix account and should clearly state that the user is requesting account and associated data deletion.</p>
+<p>When a valid deletion request is received, Toothrix will process the request and delete applicable account and personal information, subject to information that may need to be retained for legal, regulatory, security, or legitimate record-keeping purposes.</p>
+<p>Data stored locally on a device may remain until the user removes the application data or uninstalls the App. Users should also follow the deletion instructions provided within the App where applicable.</p>
+</div>
+</section>
+
+<section id="children">
+<h2>11. Children's Privacy</h2>
+<p>Toothrix is designed primarily for use by dental professionals and authorized clinic personnel, rather than for direct use by children.</p>
+<p>Patient information relating to minors may nevertheless be entered into Toothrix by authorized dental professionals when necessary for dental care and clinic recordkeeping.</p>
+<p>Toothrix does not knowingly use children's information for advertising or targeted advertising.</p>
+</section>
+
+<section id="third-party">
+<h2>12. Third-Party Services</h2>
+<p>Toothrix may use third-party services necessary for authentication, database storage, hosting, application functionality, or other technical services.</p>
+<p>These services may include:</p>
+<ul><li>Supabase</li><li>Google Sign-In</li></ul>
+<p>These services may process information as necessary to provide the functionality for which they are used.</p>
+</section>
+
+<section id="offline">
+<h2>13. Offline Functionality</h2>
+<p>Toothrix supports certain functionality when an internet connection is unavailable.</p>
+<p>Information required for offline functionality may be temporarily or persistently stored on the device.</p>
+<p>When connectivity becomes available, the application may synchronize applicable information with the online backend.</p>
+<p>Users should protect the device on which Toothrix is installed because locally stored information may be accessible to someone who gains unauthorized access to the device.</p>
+</section>
+
+<section id="changes">
+<h2>14. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time to reflect changes to Toothrix, applicable laws, or our data practices.</p>
+<p>When changes are made, the updated version will be published through this Privacy Policy webpage and the "Last Updated" date will be revised.</p>
+</section>
+
+<section id="contact">
+<h2>15. Privacy Questions and Contact</h2>
+<div class="contact">
+<p><strong>App:</strong> Toothrix</p>
+<p><strong>Developer/Organization:</strong> Toothrix</p>
+<p><strong>Privacy Contact Email:</strong> <a href="mailto:toothrix@gmail.com">toothrix@gmail.com</a></p>
+</div>
+</section>
+
+<section id="consent">
+<h2>16. Consent</h2>
+<p>By using Toothrix, users acknowledge that their information may be processed as described in this Privacy Policy.</p>
+<p>Where required by applicable law, appropriate consent and authorization will be obtained before collecting or processing personal or sensitive information.</p>
+</section>
+
+<a class="back-top" href="#top">↑ Back to top</a>
+</article>
 </main>
 
-
-<footer>
-
-    <strong>Toothrix</strong>
-    · Privacy Policy
-
-    <br>
-
-    © 2026 Toothrix. All rights reserved.
-
-</footer>
-
+<footer><strong>Toothrix</strong> · Privacy Policy<br>© 2026 Toothrix. All rights reserved.</footer>
 </body>
 </html>
